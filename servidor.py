@@ -95,7 +95,6 @@ sock_server = sock.socket(sock.AF_INET, sock.SOCK_STREAM)
 sock_server.bind((HOST, PORTA))
 sock_server.listen() # permite que vários clientes se conectem ao servidor.
 print(f"O servidor {HOST}:{PORTA} está aguardando conexões...")
-
 # Loop principal do servidor para aceitar conexões
 while True:
     sock_conn, ender = sock_server.accept() # Para cada novo cliente que se conecta, o servidor aceita a conexão (sock_server.accept()) e inicia uma thread dedicada para atender esse cliente, chamando a função recebe_dados
