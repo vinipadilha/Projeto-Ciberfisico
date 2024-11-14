@@ -7,7 +7,6 @@ from tkinter import scrolledtext
 HOST = '172.20.10.2'
 PORTA = 9999
 socket_cliente = sock.socket(sock.AF_INET, sock.SOCK_STREAM) # criação de socket para se conectar com o servidor 
-
 # Cliente solicita conexão com servidor
 socket_cliente.connect((HOST, PORTA))
 
